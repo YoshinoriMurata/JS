@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Kancolle",
+  "description": "Jump to kancolle login once accessed to dmm.com",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "https://www.dmm.com/*",
+    "http://www.dmm.com/netgame/social/application/-/detail/=/app_id=*****”
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://www.dmm.com/"],
+      "js": ["myscript.js"]
+      //"run_at": "document_end"
+    }
+  ]
+}
